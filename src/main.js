@@ -6,12 +6,5 @@ Vue.config.productionTip = false
 new Vue({
   el: "#app",
   router,
-  render: h => h(App),
-  data: {
-    todoList: [
-      {id: 0, text: 'xxxooo'},
-      {id: 1, text: 'yyy'},
-      {id: 3, text: 'zzz'}
-    ]
-  }
+  render: h => h(App)
 });
