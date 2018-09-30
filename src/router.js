@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import App from "./App";
+import Home from "./views/Home";
 import Login from './views/Login'
 
 Vue.use(Router)
@@ -12,8 +12,8 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      template: "<App />",
-      component: App
+      template: "<Home />",
+      component: Home
     },
     {
       path: '/login',

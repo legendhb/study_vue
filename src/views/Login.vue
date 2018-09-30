@@ -1,6 +1,6 @@
 <template>
     <div>
-        ooo
+        <button @click="login">点击登录</button>
     </div>
 </template>
 
@@ -9,7 +9,10 @@
     name: "login",
     methods: {
       login(){
-        console.log('xxoo');
+        let passport = this.$root.passport;
+        passport.set('isLogin', true);
+        passport.set('iggId', 1234545);
+        this.$router.push('/');
       }
     }
   }
